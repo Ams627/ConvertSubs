@@ -22,7 +22,7 @@ namespace ConvertSubs
                 {
                     var outputfile = filename + ".utf8";
                     var content = File.ReadAllText(filename, Encoding.Default);
-                    File.WriteAllText(filename, Encoding.UTF8);
+                    File.WriteAllText(filename, content, Encoding.UTF8);
                 }
 
             }
